@@ -13,8 +13,23 @@ public class ResumeController {
     private final StatisticsService statisticsService;
 
     @GetMapping("/")
-    public String index(HttpServletRequest httpServletRequest) {
+    public String getIndexPage(HttpServletRequest httpServletRequest) {
         statisticsService.calculate(httpServletRequest.getRemoteAddr());
         return "index.html";
+    }
+
+    @GetMapping("/work")
+    public String getWorkInfoPage() {
+        return "work.html";
+    }
+
+    @GetMapping("/projects")
+    public String getProjectsInfoPage() {
+        return "projects.html";
+    }
+
+    @GetMapping("/about")
+    public String getAboutInfoPage() {
+        return "about.html";
     }
 }
