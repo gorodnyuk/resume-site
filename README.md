@@ -1,3 +1,1 @@
-# README.md
-
-You are here...
+Исходники ресурса [http://gorodnyuk.ru/](http://gorodnyuk.ru/)
