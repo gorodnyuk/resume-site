@@ -6,6 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import ru.gorodnyuk.resumesite.model.StatisticsEntity;
 
+@Deprecated(forRemoval = true)
 public interface StatisticsRepository extends CrudRepository<StatisticsEntity, Long> {
 
     boolean existsByIp(String ip);

@@ -9,6 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "statistics")
+@Deprecated(forRemoval = true)
 public class StatisticsEntity {
 
     @Id

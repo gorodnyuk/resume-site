@@ -9,6 +9,7 @@ import ru.gorodnyuk.resumesite.repository.StatisticsRepository;
 
 @Service
 @RequiredArgsConstructor
+@Deprecated(forRemoval = true)
 public class StatisticsService {
 
     public static final String UNKNOWN_IP = "unknown";
