@@ -9,13 +9,18 @@ import org.springframework.web.bind.annotation.RequestHeader;
 public class ResumeController {
 
     @GetMapping("/")
-    public String getIndexPage(@RequestHeader("User-Agent") String userAgent) {
-        if (StringUtils.containsIgnoreCase(userAgent, "Mobi")
-                || StringUtils.containsIgnoreCase(userAgent, "Android")) {
-            return "mobile-error.html";
-        }
-        return "index.html";
+    public String getHelloPage() {
+        return "hello.html";
     }
+
+//    @GetMapping("/")
+//    public String getIndexPage(@RequestHeader("User-Agent") String userAgent) {
+//        if (StringUtils.containsIgnoreCase(userAgent, "Mobi")
+//                || StringUtils.containsIgnoreCase(userAgent, "Android")) {
+//            return "mobile-error.html";
+//        }
+//        return "index.html";
+//    }
 
     @GetMapping("/work")
     public String getWorkInfoPage(@RequestHeader("User-Agent") String userAgent) {
